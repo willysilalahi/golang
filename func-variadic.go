@@ -13,7 +13,7 @@ func getSum(name string, number ...int) (string, int) {
 } 
 
 func main() {
-	name, nilai := getSum("Edwin", {90, 89, 88, 95, 82})
-	fmt.Println("Mendapatkan rata-rata nilai : ", nilai)
-	fmt.Println("Mendapatkan rata-rata nilai : ", name)
+	hasil := []int{90, 89, 88, 95, 82}
+	name, nilai := getSum("Edwin", hasil...)
+	fmt.Println(name, "mendapatkan rata-rata nilai :", nilai) 
 }

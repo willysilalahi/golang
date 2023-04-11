@@ -13,11 +13,17 @@ func getNilai(nilai int) string {
 	} else {
 		return fmt.Sprint("Buruk, Nilai anda = ", nilai)
 	}
-
 } 
 
-func main() {
-	sayHello()
-	getStatus(45)
-	fmt.Println(getNilai(56)) 
+func getTotal(price int, disc int) int{
+	var harga int = price
+	var diskon int = disc
+	var total int
+	total = harga - (harga * diskon/100)
+	return total 
+}
+
+func main() { 
+	fmt.Println(getNilai(89))
+	fmt.Println("Total akhir dari harga = Rp.500.000 dan diskon = 15% adalah : ", getTotal(500000, 15))
 }
