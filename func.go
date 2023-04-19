@@ -16,9 +16,11 @@ func getStatus(nilai int) {
 	} else {
 		fmt.Println("Buruk")
 	}
-} 
+}
 
 func main() {
-	sayHello()
-	getStatus(45) 
+	var hsl float32
+
+	hsl = 0.1
+	fmt.Println(hsl)
 }
