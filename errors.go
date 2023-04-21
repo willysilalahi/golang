@@ -15,6 +15,14 @@ func Pembagian(value int, pembagi int) (int, error){
 
 
 func main(){
-	hasil := Pembagian(10,2)
-	fmt.Println(hasil)
+	
+	var controller error = errors.New("Error ya!")
+	fmt.Println(controller.Error())
+
+	hasil, err := Pembagian(10,0)
+	if err == nil{
+		fmt.Println("Hasil =", hasil)
+	}else{
+		fmt.Println("Error :", err.Error())
+	}
 }
